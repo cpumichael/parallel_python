@@ -11,6 +11,7 @@ def f(x):
 
 if __name__ == '__main__':
     with Pool(5) as p:
-        print(p.map(f, (str(i) for i in range(101))))
+        for pp in p.map(f, (str(i) for i in range(101))):
+            print(pp)
 
 # vim: ai sw=4 ts=4 et showmatch

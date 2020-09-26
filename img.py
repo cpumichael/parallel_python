@@ -69,7 +69,6 @@ if __name__ == '__main__':
 
     start = time.time()
 
-
     for p in needle_paths:
         # load the image from disk
         image = cv2.imread(p)
